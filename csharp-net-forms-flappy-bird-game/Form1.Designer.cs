@@ -33,10 +33,14 @@
             pipTop = new PictureBox();
             floor = new PictureBox();
             score = new TextBox();
+            pictureBox1 = new PictureBox();
+            cloud1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)bird).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pipBottom).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pipTop).BeginInit();
             ((System.ComponentModel.ISupportInitialize)floor).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)cloud1).BeginInit();
             SuspendLayout();
             // 
             // bird
@@ -84,12 +88,32 @@
             score.TabIndex = 4;
             score.Text = "I";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.clouds2;
+            pictureBox1.Location = new Point(139, 63);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(243, 337);
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
+            // 
+            // cloud1
+            // 
+            cloud1.Image = Properties.Resources.clouds;
+            cloud1.Location = new Point(410, 63);
+            cloud1.Name = "cloud1";
+            cloud1.Size = new Size(278, 248);
+            cloud1.TabIndex = 6;
+            cloud1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(785, 545);
+            Controls.Add(cloud1);
+            Controls.Add(pictureBox1);
             Controls.Add(score);
             Controls.Add(floor);
             Controls.Add(pipTop);
@@ -101,6 +125,8 @@
             ((System.ComponentModel.ISupportInitialize)pipBottom).EndInit();
             ((System.ComponentModel.ISupportInitialize)pipTop).EndInit();
             ((System.ComponentModel.ISupportInitialize)floor).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)cloud1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -112,5 +138,7 @@
         private PictureBox pipTop;
         private PictureBox floor;
         private TextBox score;
+        private PictureBox pictureBox1;
+        private PictureBox cloud1;
     }
 }
