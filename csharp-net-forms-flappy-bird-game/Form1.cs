@@ -6,5 +6,10 @@ namespace csharp_net_forms_flappy_bird_game
         {
             InitializeComponent();
         }
+
+        private void bird_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

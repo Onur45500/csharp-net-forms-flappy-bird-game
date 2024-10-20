@@ -41,14 +41,18 @@
             // 
             // bird
             // 
-            bird.Location = new Point(52, 127);
+            bird.Image = Properties.Resources.flappyBird;
+            bird.InitialImage = Properties.Resources.flappyBird;
+            bird.Location = new Point(47, 200);
             bird.Name = "bird";
-            bird.Size = new Size(125, 62);
+            bird.Size = new Size(196, 144);
             bird.TabIndex = 0;
             bird.TabStop = false;
+            bird.Click += bird_Click;
             // 
             // pipBottom
             // 
+            pipBottom.Image = Properties.Resources.pipeBottom;
             pipBottom.Location = new Point(594, 406);
             pipBottom.Name = "pipBottom";
             pipBottom.Size = new Size(125, 62);
@@ -57,9 +61,10 @@
             // 
             // pipTop
             // 
+            pipTop.Image = Properties.Resources.pipeTop;
             pipTop.Location = new Point(594, 2);
             pipTop.Name = "pipTop";
-            pipTop.Size = new Size(125, 62);
+            pipTop.Size = new Size(125, 202);
             pipTop.TabIndex = 2;
             pipTop.TabStop = false;
             // 
