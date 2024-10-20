@@ -77,6 +77,7 @@
             score.Name = "score";
             score.Size = new Size(125, 27);
             score.TabIndex = 4;
+            score.Text = "I";
             // 
             // Form1
             // 
