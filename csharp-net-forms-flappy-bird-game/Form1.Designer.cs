@@ -28,12 +28,83 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            bird = new PictureBox();
+            pipBottom = new PictureBox();
+            pipTop = new PictureBox();
+            floor = new PictureBox();
+            score = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)bird).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pipBottom).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pipTop).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)floor).BeginInit();
+            SuspendLayout();
+            // 
+            // bird
+            // 
+            bird.Location = new Point(52, 127);
+            bird.Name = "bird";
+            bird.Size = new Size(125, 62);
+            bird.TabIndex = 0;
+            bird.TabStop = false;
+            // 
+            // pipBottom
+            // 
+            pipBottom.Location = new Point(594, 406);
+            pipBottom.Name = "pipBottom";
+            pipBottom.Size = new Size(125, 62);
+            pipBottom.TabIndex = 1;
+            pipBottom.TabStop = false;
+            // 
+            // pipTop
+            // 
+            pipTop.Location = new Point(594, 2);
+            pipTop.Name = "pipTop";
+            pipTop.Size = new Size(125, 62);
+            pipTop.TabIndex = 2;
+            pipTop.TabStop = false;
+            // 
+            // floor
+            // 
+            floor.Location = new Point(1, 469);
+            floor.Name = "floor";
+            floor.Size = new Size(783, 74);
+            floor.TabIndex = 3;
+            floor.TabStop = false;
+            // 
+            // score
+            // 
+            score.Location = new Point(12, 12);
+            score.Name = "score";
+            score.Size = new Size(125, 27);
+            score.TabIndex = 4;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(785, 545);
+            Controls.Add(score);
+            Controls.Add(floor);
+            Controls.Add(pipTop);
+            Controls.Add(pipBottom);
+            Controls.Add(bird);
+            Name = "Form1";
+            Text = "Flappy Bird Game";
+            ((System.ComponentModel.ISupportInitialize)bird).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pipBottom).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pipTop).EndInit();
+            ((System.ComponentModel.ISupportInitialize)floor).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private PictureBox bird;
+        private PictureBox pipBottom;
+        private PictureBox pipTop;
+        private PictureBox floor;
+        private TextBox score;
     }
 }
